@@ -2,6 +2,8 @@ cmake_minimum_required (VERSION 3.21.0)
 
 add_compile_options(-Wall -Wextra -Wpedantic -Wshadow -Wfloat-equal -Wconversion -Wsign-conversion)
 
+add_definitions(-DCPPUTILS_ENABLE_CALL_MACROS)
+
 Include(FetchContent)
 
 FetchContent_Declare(
